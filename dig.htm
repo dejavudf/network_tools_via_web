@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" />
+<title>Network Tools :: Dig</title>
+</head>
+
+<body>
+<div id="header"><img src="nettools.png" /> Network Tools</div>
+<br />
+<div id="menu">
+<ul>
+<li><a href="index.htm">Ping</a></li>
+<li><a href="dns.htm">DNS lookup</a></li>
+<li><a href="tracert.php">Traceroute</a></li>
+<li><a href="whois.htm">Whois</a></li>
+<li><a href="tcp.htm">TCP</a></li>
+<li><a href="dig.htm">Dig</a></li>
+</ul>
+
+</div>
+
+<br />
+<br />
+<br />
+<hr />
+<div id="form">
+<form action="dig.php" target="kutti" method="get">
+  <p> <label>IP/Domain:
+  <input type="text" name="a" />
+  </label>
+  
+    <label>DNS Server:
+    <input type="input" name="b" value="1.1.1.1"  />
+	</label>
+
+    <label>Record Type:
+    <input type="input" name="c" value="www"  />
+	</label>
+
+  </p>
+  <p>
+    <input type="submit" value="Submit" />
+    </p>
+</form>
+
+<iframe src="dig.php" name="kutti" width="600px" frameborder="0" height="500px">
+</iframe>
+</div>
+</body>
+</html>
