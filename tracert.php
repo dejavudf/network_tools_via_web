@@ -29,7 +29,7 @@
 	<form action="trace.php" method="post" target="frame">
     <p>
     	<label>
-        IP/Domain:
+        IP/Host:
         	<input type="text" name="ip" value="<?php echo $_SERVER['REMOTE_ADDR'] ?>" />
         </label>
         
