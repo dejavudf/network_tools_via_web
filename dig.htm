@@ -35,10 +35,19 @@
     <input type="input" name="b" value="1.1.1.1"  />
 	</label>
 
-    <label>Record Type:
-    <input type="input" name="c" value="www"  />
-	</label>
-
+	<label for="dns-record-type">Record Type:</label>
+	<select id="dns-record-type" name="c" size="10">
+  	<option value="">None</option>
+  	<option value="A">A</option>
+  	<option value="AAAA">AAAA</option>
+  	<option value="CNAME">CNAME</option>
+  	<option value="MX">MX</option>
+  	<option value="TXT">TXT</option>
+  	<option value="NS">NS</option>
+  	<option value="SOA">SOA</option>
+  	<option value="SRV">SRV</option>
+ 	<option value="PTR">PTR</option>
+	</select>
   </p>
   <p>
     <input type="submit" value="Submit" />
